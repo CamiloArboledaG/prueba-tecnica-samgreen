@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "../../styles/Home.module.css";
 import Chats from "../../widgets/Chats";
+import Bienvenido from "../../widgets/Bienvenido";
 
 const Chat = () => {
   return (
@@ -13,8 +14,9 @@ const Chat = () => {
       <div className={styles.contenedorPrincipal}>
         <div className={styles.Wrapper}>
           <div className={styles.Contenido}>
-            <div className={styles.Informacion}>
+            <div className={styles.InformacionChat}>
                 <Chats/>
+                <Bienvenido/>
             </div>
           </div>
         </div>

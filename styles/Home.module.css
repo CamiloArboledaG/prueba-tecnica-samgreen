@@ -48,7 +48,7 @@
   flex-direction: column;
   overflow: hidden;
   margin: 58px 52px 110px ;
-  width: 90%;
+  width: 99%;
   height: 100%;
 }
 .Informacion {
@@ -56,4 +56,14 @@
   position: relative;
   display: flex;
   justify-content: space-evenly;
+}
+
+
+/** Css Para el contenido de la pagina  CHAT **/
+
+.InformacionChat {
+  height: 100%;
+  min-height: 500px;
+  position: relative;
+  display: flex;
 }
