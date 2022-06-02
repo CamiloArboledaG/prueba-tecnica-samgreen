@@ -1,0 +1,17 @@
+.title {
+  margin: 13px 0px;
+}
+.Divider {
+  width: 100%;
+  height: 1px;
+  background: #585886;
+  border: none;
+  opacity: 0.32;
+  margin: 10px 0px;
+}
+.LinkDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
