@@ -1,0 +1,8 @@
+.Title{
+    color: #EEEEF3;
+    margin: 0px 8px;
+}
+.ContenedorInformacionAppBar{
+    display: flex;
+    align-items: center;
+}
