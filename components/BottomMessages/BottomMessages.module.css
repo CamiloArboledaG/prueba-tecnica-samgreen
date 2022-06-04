@@ -1,0 +1,9 @@
+.ContenedorBarra{
+    width: 95%;
+    display: flex;
+    align-items: center;
+}
+.contenedorEmoji{
+    margin: 0px 25px;
+    cursor: pointer;
+}

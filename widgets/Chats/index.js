@@ -8,7 +8,12 @@ import SearchIcon from "@mui/icons-material/Search";
 import BarraChat from "../../components/BarraChat";
 import Contact from "../../components/Contact";
 
-const Chat = () => {
+const Chat = (props) => {
+  //onClick props.setState
+  const handleClick = () => {
+    props.setOpen(true);
+  };
+
   return (
     <div className={styles.Contenedor}>
       <div className={styles.ContenedorBarra}>
@@ -25,7 +30,31 @@ const Chat = () => {
           />
         </Search>
       </div>
-      <div className={styles.ContenedorBarra}>
+      <div className={styles.ContenedorChats}>
+        <a onClick={handleClick}><Contact /></a>
+        <div className={styles.ContenedorDivider}>
+          <hr className={styles.Divider}></hr>
+        </div>
+        <Contact />
+        <div className={styles.ContenedorDivider}>
+          <hr className={styles.Divider}></hr>
+        </div>
+        <Contact />
+        <div className={styles.ContenedorDivider}>
+          <hr className={styles.Divider}></hr>
+        </div>
+        <Contact />
+        <div className={styles.ContenedorDivider}>
+          <hr className={styles.Divider}></hr>
+        </div>
+        <Contact />
+        <div className={styles.ContenedorDivider}>
+          <hr className={styles.Divider}></hr>
+        </div>
+        <Contact />
+        <div className={styles.ContenedorDivider}>
+          <hr className={styles.Divider}></hr>
+        </div>
         <Contact />
         <div className={styles.ContenedorDivider}>
           <hr className={styles.Divider}></hr>

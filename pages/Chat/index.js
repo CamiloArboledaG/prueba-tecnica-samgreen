@@ -2,8 +2,12 @@ import Head from "next/head";
 import styles from "../../styles/Home.module.css";
 import Chats from "../../widgets/Chats";
 import Bienvenido from "../../widgets/Bienvenido";
+import Messages from "../../widgets/Messages";
+import { useState } from "react";
 
 const Chat = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <div className={styles.fondo}>
       <Head>
@@ -15,8 +19,10 @@ const Chat = () => {
         <div className={styles.Wrapper}>
           <div className={styles.Contenido}>
             <div className={styles.InformacionChat}>
-                <Chats/>
-                <Bienvenido/>
+              <Chats setOpen={setOpen} />
+              <div className={styles.contenedorBienvenido}>
+                {open ? <Messages /> : <Bienvenido />}
+              </div>
             </div>
           </div>
         </div>

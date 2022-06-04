@@ -1,0 +1,14 @@
+.contenedor {
+  background: #585886;
+  border-radius: 12px;
+  padding: 15px;
+  width: 100%;
+  max-width: 578px;
+  margin:  10px 64px;
+}
+.Hora{
+    color: #FFFFFF;
+}
+.contenedorMensaje {
+    width: 90%;
+  }

@@ -1,13 +1,17 @@
 .ContenedorContact {
-  padding: 0px 15px;
   display: flex;
   align-items: center;
   height: 70px;
   width: 100%;
+  max-width: 420px;
+  cursor: pointer;
+}
+.ContenedorContact:hover {
+  background-color: #f7f7ff;
 }
 .ContenedorInfo {
   height: 70px;
-  margin: 0px 6px 0px 20px;
+  margin: 0px 6px 0px 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,7 +22,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+  margin: 0px 15px 0px 0px;
 }
-.Hora{
-    padding:  0px 0px 15px 0px;
+.Hora {
+  padding: 0px 0px 15px 0px;
+}
+.Texto {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }

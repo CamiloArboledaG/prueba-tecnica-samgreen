@@ -1,6 +1,7 @@
 import { Avatar, Badge } from "@mui/material";
 import styles from "./Contact.module.css";
 import { purple } from "@mui/material/colors";
+import IconButton from '@mui/material/IconButton';
 
 const Contact = () => {
   return (
@@ -12,13 +13,14 @@ const Contact = () => {
           fontWeight: "500",
           fontSize: "16px",
           cursor: "pointer",
+          margin: "0px 15px"
         }}
       >
         MM
       </Avatar>
       <div className={styles.ContenedorInfo}>
         <h4>Miracle Mango</h4>
-        <h5>Lorem ipsum dolor sit amet, consectetur ...</h5>
+        <h5 className={styles.Texto}>Lorem ipsum dolor sit amet, consectetur ...</h5>
       </div>
       <div  className={styles.ContenedorAdicional}>
         <h6 className={styles.Hora}>16:38PM</h6>

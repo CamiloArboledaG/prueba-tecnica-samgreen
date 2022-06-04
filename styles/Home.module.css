@@ -62,8 +62,13 @@
 /** Css Para el contenido de la pagina  CHAT **/
 
 .InformacionChat {
-  height: 100%;
-  min-height: 600px;
+  height: 600px;
   position: relative;
   display: flex;
+}
+.contenedorBienvenido{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
 }
