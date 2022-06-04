@@ -2,7 +2,8 @@ import { Card, InputAdornment, TextField } from "@mui/material";
 import Textfield from "../../components/Textfield";
 import styles from "./Login.module.css";
 import Button from "../../components/Button";
-import Link from "../../components/Link";
+import Linkcomponent from "../../components/Link";
+import Link from "next/link";
 
 const Login = () => {
   return (
@@ -34,11 +35,13 @@ const Login = () => {
           startAdornment: <InputAdornment position="start"></InputAdornment>,
         }}
       />
-      <Button variant="contained">INICIAR SESIÓN</Button>
+      <Link href="/Chat">
+        <Button variant="contained">INICIAR SESIÓN</Button>
+      </Link>
       <hr className={styles.Divider}></hr>
       <div className={styles.LinkDiv}>
-        <Link>No tengo una cuenta</Link>
-        <Link>Recuperar contraseña</Link>
+        <Linkcomponent>No tengo una cuenta</Linkcomponent>
+        <Linkcomponent>Recuperar contraseña</Linkcomponent>
       </div>
     </Card>
   );
